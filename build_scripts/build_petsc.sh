@@ -1,7 +1,10 @@
 #!/bin/bash
 
 # Dependecies include:
-# -  Intel => 2019
+# -  Intel OneAPI (opensource license) -- hint: download and use the installer script for (hpctoolkit)
+#    wget https://registrationcenter-download.intel.com/akdlm/irc_nas/18975/l_HPCKit_p_2022.3.1.16997_offline.sh
+#    sudo sh ./l_HPCKit_p_2022.3.1.16997_offline.sh
+#
 # -  Openmpi-4.1.x built with Intel compiler
 # -  Valgrind for memory debugging
 # -  Cmake => 3.17
@@ -52,4 +55,3 @@ CFGFLAGS=(
 ./configure "${CFGFLAGS[@]}"
 make
 make check
-
